@@ -1,0 +1,16 @@
+name = "mathlib4-project"
+version = "0.1.0"
+defaultTargets = ["mathlib4-project"]
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.29.0-rc2"
+
+[[lean_lib]]
+name = "RiemannHypothesis"
+leanOptions = { maxHeartbeats = 6000000 }
+
+[[lean_exe]]
+name = "mathlib4-project"
+root = "Main"
