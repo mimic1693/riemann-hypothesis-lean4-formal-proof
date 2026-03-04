@@ -1,6 +1,6 @@
-name = "mathlib4-project"
+name = "riemann_hypothesis"
 version = "0.1.0"
-defaultTargets = ["mathlib4-project"]
+defaultTargets = ["RiemannHypothesis", "rh_proof"]
 
 [[require]]
 name = "mathlib"
@@ -12,5 +12,5 @@ name = "RiemannHypothesis"
 leanOptions = { maxHeartbeats = 6000000 }
 
 [[lean_exe]]
-name = "mathlib4-project"
+name = "rh_proof"
 root = "Main"
